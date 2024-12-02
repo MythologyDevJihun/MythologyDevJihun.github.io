@@ -20,7 +20,7 @@ import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://fuwari.vercel.app/",
+  site: "https://mythologydevjihun.github.io/",
   base: "/",
   trailingSlash: "always",
   integrations: [
@@ -31,9 +31,7 @@ export default defineConfig({
     ),
     swup({
       theme: false,
-      animationClass: "transition-swup-", // see https://swup.js.org/options/#animationselector
-      // the default value `transition-` cause transition delay
-      // when the Tailwind class `transition-all` is used
+      animationClass: "transition-swup-",
       containers: ["main", "#toc"],
       smoothScrolling: true,
       cache: true,
@@ -57,7 +55,7 @@ export default defineConfig({
       CSS: false,
       Image: false,
       Action: {
-        Passed: async () => true, // https://github.com/PlayForm/Compress/issues/376
+        Passed: async () => true,
       },
     }),
   ],
