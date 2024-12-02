@@ -15,7 +15,7 @@ export const siteConfig: SiteConfig = {
     fixed: true,
   },
   banner: {
-    enable: false,
+    enable: true,
     src: 'assets/images/wallpaper-light.webp',
     position: 'top',
     credit: {
@@ -53,7 +53,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
   avatar: 'assets/images/avatar.PNG',
   name: 'Dev Jihun',
-  bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  bio: 'FullStack이 꿈인 응애응애 개발자',
   links: [
     // {
     //   name: 'Twitter',
