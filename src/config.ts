@@ -11,7 +11,7 @@ export const siteConfig: SiteConfig = {
   subtitle: 'Github Blog',
   lang: 'ko',
   themeColor: {
-    hue: 250,
+    hue: 295,
     fixed: true,
   },
   banner: {
@@ -43,8 +43,8 @@ export const navBarConfig: NavBarConfig = {
     LinkPreset.Archive,
     LinkPreset.About,
     {
-      name: 'GitHub',
-      url: 'https://github.com/MythologyDevJihun',
+      name: 'MythologyTeams',
+      url: 'https://mythologyteams.com',
       external: true,
     },
   ],
@@ -67,6 +67,11 @@ export const profileConfig: ProfileConfig = {
     //   icon: 'fa6-brands:steam',
     //   url: 'https://store.steampowered.com',
     // },
+    {
+      name: '',
+      icon: 'fa6-solid:envelope',
+      url: 'mailto:dev_jihun@mythologyteams.com',
+    },
     {
       name: '',
       icon: 'fa6-brands:github',
