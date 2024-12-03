@@ -15,3 +15,11 @@
     async>
   </script>
 </section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        iframe?.contentWindow.postMessage({ giscus: { setConfig: { theme } } }, 'https://giscus.app');
+    });
+</script>
