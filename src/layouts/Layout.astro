@@ -152,9 +152,19 @@ const bannerOffset =
 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4514768555831806"
      			crossorigin="anonymous"></script>
 
+		<!--
 		<script>
       			{initializeAnalytics("G-1ZG697X0b")};
-    		</script>
+    		</script> -->
+
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-1ZGZ697X0B"></script>
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+
+  			gtag('config', 'G-1ZGZ697X0B');
+		</script>
 
 	</head>
 	<body class=" min-h-screen transition " class:list={[{"lg:is-home": isHomePage, "enable-banner": enableBanner}]}
