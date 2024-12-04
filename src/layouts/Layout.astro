@@ -18,7 +18,7 @@ import {
 import { defaultFavicons } from '../constants/icon'
 import type { Favicon } from '../types/config'
 import { url, pathsEqual } from '../utils/url-utils'
-import GoogleAnalytices from '../plugins/GoogleAnalytics.astro'
+import { initializeAnalytics } from '../plugins/googleAnalytics.js'
 
 interface Props {
   title?: string
@@ -152,7 +152,9 @@ const bannerOffset =
 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4514768555831806"
      			crossorigin="anonymous"></script>
 
-		<GoogleAnalytices id="G-1ZG697X0b">
+		<script>
+      			{initializeAnalytics(G-1ZG697X0b)};
+    		</script>
 
 	</head>
 	<body class=" min-h-screen transition " class:list={[{"lg:is-home": isHomePage, "enable-banner": enableBanner}]}
